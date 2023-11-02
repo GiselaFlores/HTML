@@ -1,4 +1,44 @@
-body{
-    background-color:rgb(9, 49, 129);
-    color: aliceblue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: var(--textochico);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(21, 21, 21);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content:space-around;
+    align-items: flex-end;
+
+}
+
+.fijo{
+    padding: 20px;
+    color:blueviolet;
+    display: block;
+}
+
+@media screen and (min-width:500px) and (max-width: 600px) and (orientation: portrait){
+
+    .fijo{
+        padding: 5px;
+        background-color: brown;
+        display: none;
+    }      
+}
+
+@media screen and (min-width:601px) and (max-width: 800px) {
+
+    .fijo{
+        background-color: rgb(42, 110, 165);
+    }   
 }
